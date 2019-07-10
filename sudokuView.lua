@@ -27,7 +27,7 @@ function avaliate( event )
             if(sudoku:posicaoLivre()) then
                 msg = 'preencha todos os campos'
             else
-                avaliated = verificar()
+                avaliated = sudoku:verificar()
                 msg = avaliated and 'sudoku concluído parabéns' or 'Existem valores duplicados'
             end
             showMsg.text = msg
